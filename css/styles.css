@@ -1,0 +1,23 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  background-color: darkslategray;
+}
+
+.header-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
+.list {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
