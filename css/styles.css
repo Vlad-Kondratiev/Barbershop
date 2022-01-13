@@ -1,17 +1,14 @@
+:root {
+  --header-text-color: #ffffff;
+  --first-btn-color: #ffffff;
+  --second-btn-color: #303030;
+  --first-text-color: #ffffff;
+  --second-text-color: #303030;
+  --accent-color: #ff6c00;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
-}
-
-.header {
-  background-color: darkslategray;
-}
-
-.header-link {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  color: #ffffff;
 }
 
 .list {
@@ -20,4 +17,33 @@ body {
 
 a {
   text-decoration: none;
+}
+
+/* ---------------HEADER------------------ */
+
+.header {
+  background-color: darkslategray;
+}
+
+.header-link,
+.header-link-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--header-text-color);
+}
+
+.header-link:hover .header-link:focus {
+  color: var(--accent-color);
+}
+
+.header-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--first-btn-color);
 }
