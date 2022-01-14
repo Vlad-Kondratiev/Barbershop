@@ -37,6 +37,19 @@ a {
   letter-spacing: 0.05em;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* ---------------HEADER------------------ */
 
 .header {
@@ -120,11 +133,6 @@ a {
 }
 
 .about-title {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
   color: var(--second-title-color);
 }
 
@@ -159,7 +167,7 @@ a {
   color: var(--accent-color);
 }
 
-/* --------------ABOUT----------------- */
+/* --------------PRICES----------------- */
 
 .prices {
   background-color: rgb(144, 186, 186);
@@ -170,12 +178,6 @@ a {
 }
 
 .prices-title {
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: calc(49 / 42);
-  letter-spacing: 0.05em;
   color: var(--first-title-color);
 }
 
@@ -226,11 +228,6 @@ a {
 }
 
 .reasons-title {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: calc(49 / 42);
-  letter-spacing: 0.05em;
   color: var(--second-title-color);
 }
 
@@ -249,11 +246,6 @@ a {
 }
 
 .masters-title {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: calc(49 / 42);
-  letter-spacing: 0.05em;
   color: var(--second-title-color);
 }
 
@@ -276,3 +268,15 @@ a {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+
+/* --------------GALLERY----------------- */
+.gallery-pre-title {
+  color: var(--second-title-color);
+}
+
+/* --------------CONTACTS----------------- */
+address {
+  font-style: normal;
+}
+
+/* --------------FOOTER----------------- */
