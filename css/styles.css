@@ -45,10 +45,11 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
-.conteiner {
-  width: 1000px;
+.container {
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   outline: 2px solid coral;
@@ -87,6 +88,10 @@ img {
 
 /* ---------------HEADER------------------ */
 
+.logo {
+  margin-left: 73px;
+}
+
 .header {
   font-weight: 600;
   font-size: 12px;
@@ -96,6 +101,25 @@ img {
   background-color: rgb(144, 186, 186);
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.header-list {
+  display: flex;
+  margin-left: 72px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-connect {
+  margin-left: auto;
 }
 
 .header-link {
@@ -127,12 +151,37 @@ img {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--first-btn-color);
+  margin-left: 40px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  background-color: transparent;
+  min-width: 160px;
+  height: 40px;
+}
+
+.header-item + .header-item {
+  margin-left: 40px;
 }
 
 /* --------------HERO----------------- */
 
 .hero {
+}
+
+.hero-container {
+  display: flex;
+}
+
+.hero-right {
   background-color: rgb(67, 67, 67);
+  flex-grow: 1;
+  padding-bottom: 206px;
+  padding-top: 272px;
+  padding-left: 96px;
+}
+
+.hero-list {
+  width: 93px;
 }
 
 .hero-link {
@@ -319,6 +368,12 @@ img {
 
 .masters-title {
   color: var(--second-title-color);
+  margin-bottom: 44px;
+}
+
+.masters-list {
+  display: flex;
+  margin-left: -30px;
 }
 
 .masters-item-title {
@@ -344,6 +399,15 @@ img {
 
 .masters-item-content {
   padding-top: 30px;
+}
+
+.masters-item + .masters-item {
+  margin-left: 30px;
+}
+
+.masters-item {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
 }
 
 /* --------------GALLERY----------------- */
