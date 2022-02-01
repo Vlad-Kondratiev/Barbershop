@@ -212,7 +212,7 @@ img {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  line-height: calc()
+  line-height: calc();
   letter-spacing: 0.2em;
   color: var(--second-title-color);
 }
@@ -348,7 +348,9 @@ img {
 .prices-list {
   width: 50%;
   padding: 30px 40px;
+  /* background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%); */
 }
+
 
 .prices-list:nth-child(odd) {
   background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
@@ -358,13 +360,28 @@ img {
   background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
+/* если 4 и больше ui и градиент в шахматном порядке */
+/* .prices-list:nth-child(4n-1),
+.prices-list:nth-child(4n-2) {
+  background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+} */
+
 .prices-item {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .prices-item + .prices-item {
   margin-top: 20px;
+}
+
+.prices-item::before {
+  content: "";
+  background-color: rgba(157, 164, 189, 0.12);
+  margin-left: 6px;
+  margin-right: 6px;
+  flex-grow: 1;
 }
 
 .prices-text {
@@ -373,6 +390,10 @@ img {
   line-height: calc(30 / 18);
   letter-spacing: 0.02em;
   color: #9da4bd;
+}
+
+.prices-text:first-child {
+  order: -1;
 }
 
 .prices-btn {
