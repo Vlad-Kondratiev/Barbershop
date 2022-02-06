@@ -33,7 +33,7 @@
             </nav>
             <div class="header-connect">
             <a href="tel:+380441111111" class="header-link-tel">+38 044 111 11 11</a>
-            <button type="button" class="header-btn btn">онлайн-запись</button>
+            <button type="button" class="header-btn btn" data-modal-open>онлайн-запись</button>
             </div>
         </div>
     </header>
@@ -97,6 +97,8 @@
             </div>
             </div>
         </section>
+
+        <!-- ===============================PRICES=================================== -->
 
 
         <section class="prices section">
@@ -187,8 +189,11 @@
         </section>
 
 
+        <!-- ===============================REASONS=================================== -->
+
+
         <section class="reasons section">
-            <div class="container">
+            <div class="container reasons-container">
                 <div class="reasons-left">   
                     <ul class="reasons-list list">
                         <li class="reasons-item">
@@ -209,12 +214,15 @@
                         </li>                               
                     </ul>
                 </div> 
-            <p class="reasons-pre-title pre-title">старая традиционная школа</p>
-            <h2 class="reasons-title section-title">Почему приходят именно к нам?</h2>
-            <p class="reasons-after-title">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
+                <div class="reasons-right">
+                    <p class="reasons-pre-title pre-title">старая традиционная школа</p>
+                    <h2 class="reasons-title section-title">Почему приходят именно к нам?</h2>
+                    <p class="reasons-after-title">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
+                </div>
             </div>
         </section>
 
+        <!-- ===============================MASTERS=================================== -->
 
         <section id="masters" class="masters section">
             <div class="container">
@@ -222,47 +230,65 @@
             <h2 class="masters-title section-title">Наши мастера</h2>
             <ul class="list masters-list">
                 <li class="masters-item">
-                    <img src="./images/barber-1.jpg"
-                    alt="барбер стрижет клиента" 
-                    width="370" 
-                    height="346" 
-                    class="masters-item-img">
+                    <div class="masters-wrap">
+                        <img src="./images/barber-1.jpg"
+                        alt="барбер стрижет клиента" 
+                        width="370" 
+                        height="346" 
+                        class="masters-item-img">                   
+                        <p class="masters-top-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, consequatur numquam inventore molestias accusantium necessitatibus explicabo similique veniam. Ducimus ab error iste voluptate maiores sunt eveniet sequi dolores quis asperiores?
+                        </p>
+                    </div>
                     <div class="masters-item-content">
-                    <h3 lang="en" class="masters-item-title">John Smith</h3>
-                    <p lang="en" class="masters-item-text">Extreme Barber</p>
-                    <ul class="masters-socials-list list">
-                        <li class="masters-socials-item">
-                            <a href="" class="master-socials-link"></a>
-                        </li>
-                        <li class="masters-socials-item">
-                            <a href="" class="master-socials-link"></a>
-                        </li>
-                        <li class="masters-socials-item">
-                            <a href="" class="master-socials-link"></a>
-                        </li>
-                        <li class="masters-socials-item">
-                            <a href="" class="master-socials-link"></a>
-                        </li>
-                    </ul>
+                        <h3 lang="en" class="masters-item-title">John Smith</h3>
+                        <p lang="en" class="masters-item-text">Extreme Barber</p>
+                        <ul class="masters-socials-list list">
+                            <li class="masters-socials-item">
+                                <a href="" class="master-socials-link"></a>
+                            </li>
+                            <li class="masters-socials-item">
+                                <a href="" class="master-socials-link"></a>
+                            </li>
+                            <li class="masters-socials-item">
+                                <a href="" class="master-socials-link"></a>
+                            </li>
+                            <li class="masters-socials-item">
+                                <a href="" class="master-socials-link"></a>
+                            </li>
+                        </ul>
                     </div>
                 </li>
+
                 <li class="masters-item">
+                    <div class="masters-wrap">
                     <img src="./images/barber-2.jpg" 
-                    alt="барбер стрижет клиента" 
-                    width="370" 
-                    height="346" 
-                    class="masters-item-img">
+                        alt="барбер стрижет клиента" 
+                        width="370" 
+                        height="346" 
+                        class="masters-item-img">
+                        <p class="masters-top-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, consequatur numquam
+                            inventore molestias accusantium necessitatibus explicabo similique veniam. Ducimus ab error iste voluptate maiores
+                            sunt eveniet sequi dolores quis asperiores?
+                        </p>
+                    </div>
                     <div class="masters-item-content">
                     <h3 lang="en" class="masters-item-title">Michele Doe</h3>
                     <p lang="en" class="masters-item-text">Extreme Barber</p>
                     </div>
                 </li>
+
                 <li class="masters-item">
-                    <img src="./images/barber-3.jpg"
-                    alt="барбер стрижет клиента"
-                    width="370"
-                    height="346"
-                    class="masters-item-img">
+                    <div class="masters-wrap">
+                        <img src="./images/barber-3.jpg"
+                        alt="барбер стрижет клиента"
+                        width="370"
+                        height="346"
+                        class="masters-item-img">
+                        <p class="masters-top-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, consequatur numquam
+                            inventore molestias accusantium necessitatibus explicabo similique veniam. Ducimus ab error iste voluptate maiores
+                            sunt eveniet sequi dolores quis asperiores?
+                        </p>
+                    </div>
                     <div class="masters-item-content">
                     <h3 lang="en" class="masters-item-title">Alan Black</h3>
                     <p lang="en" class="masters-item-text">Extreme Barber</p>
@@ -271,6 +297,9 @@
             </ul>
             </div>
         </section>
+
+
+        <!-- ===============================GALERY=================================== -->
 
 
         <section class="galery">
@@ -291,6 +320,8 @@
             <h2>Онлайн-запись</h2>
         </section>
 
+
+        <!-- ===============================CONTACTS=================================== -->
 
         <section>
             <h2>Контакты</h2>
@@ -316,6 +347,8 @@
     </main>
 
 
+    <!-- ===============================FOOTER=================================== -->
+
     <footer>
         <p>&copy; Copyright 2020</p>
         <ul class="list">
@@ -323,6 +356,31 @@
             <li><a href="">Youtube</a></li>
         </ul>
     </footer>
+
+    <!-- ================================MODAL=================================== -->
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>X</button>
+        </div>
+    </div>
+
+    <script>
+        (() => {
+            const refs = {
+                openModalBtn: document.querySelector("[data-modal-open]"),
+                closeModalBtn: document.querySelector("[data-modal-close]"),
+                modal: document.querySelector("[data-modal]"),
+            };
+
+            refs.openModalBtn.addEventListener("click", toggleModal);
+            refs.closeModalBtn.addEventListener("click", toggleModal);
+
+            function toggleModal() {
+                refs.modal.classList.toggle("is-hidden");
+            }
+        })();                
+    </script>
     
 </body>
 </html>
