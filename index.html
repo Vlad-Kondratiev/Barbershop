@@ -359,11 +359,86 @@
 
     <!-- ================================MODAL=================================== -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>X</button>
+            <p class="modal-title">Заголовок</p>
+            <form class="modal-form">
+                <div class="form-field">
+                    <label for="user-name" class="modal-label">Введите имя</label>
+                    <input type="text" 
+                    name="user-name" 
+                    class="modal-input" 
+                    placeholder="Иван Петров"
+                    required
+                    />
+                </div>
+
+                <div class="form-field">
+                    <label for="user-mail" class="modal-label">Введите почту</label>
+                    <input type="mail" 
+                    name="user-mail" 
+                    class="modal-input" 
+                    placeholder="enter@mail.com" 
+                    />
+                </div>
+
+                <div class="form-field">
+                    <label for="user-phone" class="modal-label">Введите почту</label>
+                    <input type="tel" 
+                    name="user-phone" 
+                    class="modal-input" 
+                    placeholder="+380-XX-XXX-XX-XX" 
+                    required 
+                    />
+                </div>
+
+                <div class="form-field">
+                    <label for="user-text" class="modal-label">Введите текст</label>
+                    <textarea name="user-text" 
+                    id="user-text" 
+                    class="modal-text"
+                    placeholder="Ваш комментарий"
+                    ></textarea>
+                </div>
+
+                <fieldset>
+                    <legend>Size</legend>
+                    <label for="big-size" >40 cm</label>
+                    <input type="radio" id="big-size" name="size" value="big-size">
+                    <label for="small-size" >30 cm</label>
+                    <input type="radio" id="small-size" name="size" value="small-size">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Adds</legend>
+                    <label for="cheese">Cheese</label>
+                    <input type="checkbox" id="cheese" name="Adds" value="cheese">
+                    <label for="peperoni">Pepperoni</label>
+                    <input type="checkbox" id="peperoni" name="Adds" value="peperoni">
+                </fieldset>
+
+                <fieldset>
+                    <label for="city">Город</label>
+                    <select name="city" id="city" class="modal-input" >
+                        <option value="Одесса">Одесса</option>
+                        <option value="Николаев">Николаев</option>
+                        <option value="Херсон" selected>Херсон</option>
+                    </select>
+                </fieldset>
+
+
+
+
+                <button type="submit" >Отправить</button>
+                <button class="reset" >Очистить</button>
+            </form>
         </div>
     </div>
+
+
+    <!-- ======================================================================== -->
+
 
     <script>
         (() => {
