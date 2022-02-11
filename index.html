@@ -315,15 +315,38 @@
             </div>
         </section>
 
+        <div class="contact-wrap">
+            <div class="container">
+                <section class="online">
+                    <h2 class="online-title section-title">Онлайн-запись</h2>
+                    <form class="onlain-form">
+                        <div class="online-wrap">
+                            <input type="text" 
+                            name="online-name" 
+                            class="online-input online-input-long"
+                            placeholder="Имя*">
 
-        <section>
-            <h2>Онлайн-запись</h2>
-        </section>
+                            <input type="tel" 
+                            name="online-tel" 
+                            class="online-input"
+                            placeholder="Телефон*">
+                        </div>
+
+                        <textarea name="online-text" 
+                        id="online-text" 
+                        class="online-text"
+                        placeholder="сообщение">
+                        </textarea>
+
+                        <button type="submit" class="online-btn btn">отправить</button>
+                       
+                    </form>
+                </section>
 
 
         <!-- ===============================CONTACTS=================================== -->
 
-        <section>
+                <section>
             <h2>Контакты</h2>
             <address>
                 <ul class="list">
@@ -343,7 +366,9 @@
             </address>
             <p>время работы</p>
             <p>Ежедневно с 9:00 до 22:00</p>           
-        </section>        
+                </section>
+            </div>
+        </div>
     </main>
 
 
@@ -359,38 +384,53 @@
 
     <!-- ================================MODAL=================================== -->
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>X</button>
             <p class="modal-title">Заголовок</p>
             <form class="modal-form">
                 <div class="form-field">
                     <label for="user-name" class="modal-label">Введите имя</label>
+                    <div class="modal-input-wrap">
                     <input type="text" 
                     name="user-name" 
                     class="modal-input" 
                     placeholder="Иван Петров"
                     required
                     />
+                    <svg class="modal-icon" width="18" height="18">
+                        <use href="./icons.svg#icon-person-black-18dp"></use>
+                    </svg>
+                    </div>
                 </div>
 
                 <div class="form-field">
                     <label for="user-mail" class="modal-label">Введите почту</label>
-                    <input type="mail" 
-                    name="user-mail" 
-                    class="modal-input" 
-                    placeholder="enter@mail.com" 
-                    />
+                    <div class="modal-input-wrap">
+                        <input type="mail" 
+                        name="user-mail" 
+                        class="modal-input" 
+                        placeholder="enter@mail.com" 
+                        />
+                        <svg class="modal-icon" width="18" height="18">
+                            <use href="./icons.svg#icon-email-black-18dp"></use>
+                        </svg>
+                    </div>
                 </div>
 
                 <div class="form-field">
                     <label for="user-phone" class="modal-label">Введите почту</label>
+                    <div class="modal-input-wrap">
                     <input type="tel" 
                     name="user-phone" 
                     class="modal-input" 
                     placeholder="+380-XX-XXX-XX-XX" 
                     required 
                     />
+                    <svg class="modal-icon" width="18" height="18">
+                        <use href="./icons.svg#icon-phone-black-18dp"></use>
+                    </svg>
+                    </div>
                 </div>
 
                 <div class="form-field">
@@ -402,7 +442,15 @@
                     ></textarea>
                 </div>
 
-                <fieldset>
+                <div class="form-field">
+                    <input type="checkbox" 
+                    class="modal-check visually-hidden" 
+                    id="modal-check"
+                    name="modal-check">
+                    <label for="modal-check" class="modal-check-text">Подпишись на спам</label>
+                </div>
+
+                <!-- <fieldset>
                     <legend>Size</legend>
                     <label for="big-size" >40 cm</label>
                     <input type="radio" id="big-size" name="size" value="big-size">
@@ -425,11 +473,7 @@
                         <option value="Николаев">Николаев</option>
                         <option value="Херсон" selected>Херсон</option>
                     </select>
-                </fieldset>
-
-
-
-
+                </fieldset> -->
                 <button type="submit" >Отправить</button>
                 <button class="reset" >Очистить</button>
             </form>
@@ -440,22 +484,6 @@
     <!-- ======================================================================== -->
 
 
-    <script>
-        (() => {
-            const refs = {
-                openModalBtn: document.querySelector("[data-modal-open]"),
-                closeModalBtn: document.querySelector("[data-modal-close]"),
-                modal: document.querySelector("[data-modal]"),
-            };
-
-            refs.openModalBtn.addEventListener("click", toggleModal);
-            refs.closeModalBtn.addEventListener("click", toggleModal);
-
-            function toggleModal() {
-                refs.modal.classList.toggle("is-hidden");
-            }
-        })();                
-    </script>
-    
+    <script src="./js/modal.js"></script>    
 </body>
 </html>
